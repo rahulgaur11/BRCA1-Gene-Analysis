@@ -8,7 +8,7 @@ import streamlit as st
 
 # Step 2: Load and Parse the BRCA1 FASTA Sequence
 # Load sequence from FASTA file
-record = SeqIO.read("C:\\Users\\l\\Downloads\\BRCA1_Analysis\\BRCA1 FASTA", "fasta")
+record = SeqIO.read("BRCA1 FASTA", "fasta")
 sequence = record.seq
 
 # Sequence Information
