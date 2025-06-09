@@ -138,7 +138,12 @@ st.pyplot(fig)
 # Step 6: GC Content Across the Gene Sequence (Sliding Window)
 window_size = 100  # Adjust window size as desired
 gc_content_values = [
-    (sequence[i:i + window_size].count("G") + sequence[i:i + window_size].count("C")) / window_size * 100
+    (
+        sequence[i : i + window_size].count("G")
+        + sequence[i : i + window_size].count("C")
+    )
+    / len(sequence[i : i + window_size])
+    * 100
     for i in range(0, sequence_length, window_size)
 ]
 
